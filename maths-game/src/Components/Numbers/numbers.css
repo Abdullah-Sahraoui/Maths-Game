@@ -1,0 +1,17 @@
+.numbers {
+	position: relative;
+	top: 10%;
+	left: calc(35%);
+	width: 30%;
+	height: 50vh;
+	font-size: 6em;
+	border: 2px solid lightblue;
+	border-radius: 17px;
+	background-color: #ccf3ff;
+}
+
+/* .positioning {
+	position: relative;
+	top: 20%;
+	height: calc(100vh - 20%);
+} */
