@@ -42,3 +42,35 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
+.timer-wrapper {
+  position: relative;
+	left: calc(50% - 150px);
+	padding: 0;
+	margin: 0;
+	top: 20px;
+	width: 300px;
+}
+
+.timer {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  color: #aaa;
+	font-size: 2em;
+}
+
+.value {
+  font-size: 40px;
+}
+
+.info {
+  max-width: 360px;
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 16px;
+}

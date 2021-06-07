@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
+import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import Numbers from '../Components/Numbers/numbers.js';
 import './App.css';
-import FadeIn from 'react-fade-in';
 
 
 function App() {
-  
+  const renderTime = ({ remainingTime }) => {
+		return (
+			<div className="timer">
+				<div className="text">Remaining</div>
+				<div className="value">{remainingTime}</div>
+				<div className="text">seconds</div>
+			</div>
+		)
+	}
+
+
 	const [start, setStart] = useState(true);
 
 	if (start) {
@@ -21,6 +31,23 @@ function App() {
 	} else {
 		return (
 			<div className="main-wrapper">
+				<div className="timer-wrapper">
+					<CountdownCircleTimer
+						isPlaying
+						strokeWidth={18}
+						isLinearGradient="true"
+						trailColor="lightgrey"
+						duration={60}
+						size={300}
+						colors={[
+							["#0099ff"],
+							["#00e699"],
+						]}
+					>
+						{renderTime}
+					</CountdownCircleTimer>
+				</div>
+
 				<Numbers />
 			</div>
 		)

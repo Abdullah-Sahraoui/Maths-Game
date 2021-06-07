@@ -1,9 +1,9 @@
 .numbers {
 	position: relative;
-	top: 10%;
-	left: calc(35%);
-	width: 30%;
-	height: 50vh;
+	left: calc(50% - 450px);
+	top: 100px;
+	width: 900px;
+	height: 500px;
 	font-size: 6em;
 	border: 2px solid lightblue;
 	border-radius: 17px;

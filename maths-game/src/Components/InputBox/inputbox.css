@@ -1,8 +1,7 @@
 
 .form {
   position: relative;
-  top: calc(23vh + 5px);
-  right: 1px;
+	top: calc(500px - 255px);
 
 
   border: 2px solid transparent;
