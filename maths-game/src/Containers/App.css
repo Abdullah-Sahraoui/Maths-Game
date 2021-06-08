@@ -1,12 +1,22 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: #DBF1FF;
 }
+
 /* START BUTTON FONT: */
 @font-face {
 	font-family: 'SEGA LOGO FONT';
 	font-style: normal;
 	font-weight: normal;
 	src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+/* Timer Font: */
+@font-face {
+	font-family: 'Mission Script';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Mission Script'), url('Mission-Script.woff') format('woff');
 }
 
 .button-container {
@@ -44,6 +54,8 @@ body {
 }
 
 .timer-wrapper {
+	font-family: 'Mission Script';
+	text-transform: uppercase;
   position: relative;
 	left: calc(50% - 150px);
 	padding: 0;
@@ -53,7 +65,6 @@ body {
 }
 
 .timer {
-  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,11 +72,11 @@ body {
 
 .text {
   color: #aaa;
-	font-size: 2em;
+	font-size: 2.7em;
 }
 
 .value {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .info {
