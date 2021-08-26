@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Mission Script';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Mission Script'), url('../../Containers/Mission-Script.woff') format('woff');
+}
+
+.results-table {
+  width: 50vw;
+  height: 75vh;
+  border: 2px solid royalblue;
+  border-radius: 60px;
+  background-color: lightgrey;
+
+  /* Positioning */
+  position: absolute;
+  left: 25%;
+  top: 12.5%;
+}
+
+.user-score {
+  text-align: center;
+  color: #9bff94;
+  font-family: 'Mission Script', sans-serif;
+  font-size: 5.6em;
+}

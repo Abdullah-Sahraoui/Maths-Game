@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
-import Numbers from '../Components/Numbers/numbers.js';
+import Numbers from '../Components/Numbers/numbers';
+import Results from '../Components/Results/Results';
 import './App.css';
 
 
@@ -8,8 +9,8 @@ function App() {
 	// Check if timer == 0
   const renderTime = ({ remainingTime }) => {
 		if (remainingTime == 0) {
-			// Return to start page if timer == 0
-			setStart(true);
+			// go to results page if timer == 0
+			setResults(true);
 		}
 		return (
 			<div className="timer">
@@ -20,13 +21,14 @@ function App() {
 		)
 	}
 
+	// Check for results value
+	const [results, setResults] = useState(false);
 
 	// Check for start value
 	const [start, setStart] = useState(true);
 
-	// Handle start value
+	// Handle start/results value
 	if (start) {
-		console.log(start)
 		return (
 			<div className="main-wrapper">
 				<div className="button-container">
@@ -35,6 +37,10 @@ function App() {
 					</button>
 				</div>
 			</div>
+		);
+	} else if (results){
+		return (
+			<Results />
 		);
 	} else {
 		return (
