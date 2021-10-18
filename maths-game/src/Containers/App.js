@@ -51,7 +51,7 @@ function App() {
 						strokeWidth={18}
 						isLinearGradient="true"
 						trailColor="lightgrey"
-						duration={3}
+						duration={15}
 						size={300}
 						colors={[
 							["#0099ff"],

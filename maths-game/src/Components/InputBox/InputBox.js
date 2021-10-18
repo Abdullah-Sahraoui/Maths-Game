@@ -4,18 +4,20 @@ import './inputbox.css'
 import FadeIn from 'react-fade-in';
 
 const checkAnswer = (values, userValue) => {
+	userValue = parseInt(userValue);
 	switch (values.operation) {
 		case "x":
-			return(values.n1 * values.n2 === parseInt(userValue, 10)) ? true : false;
+			var answer = (values.n1 * values.n2 === userValue) ? true : false;
 		case "÷":
-			return(values.n1 / values.n2 === parseInt(userValue, 10)) ? true : false;
+			var answer = (values.n1 / values.n2 === userValue) ? true : false;
 		case "+":
-			return(values.n1 + values.n2 === parseInt(userValue, 10)) ? true : false;
+			var answer = (values.n1 + values.n2 === userValue) ? true : false;
 		case "-":
-			return(values.n1 - values.n2 === parseInt(userValue, 10)) ? true : false;
+			var answer = (values.n1 - values.n2 === userValue) ? true : false;
 		default:
 			break;
 	}
+	return answer;
 }
 
 
